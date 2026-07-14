@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "Microbrew";
+    src: url("Microbrew.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 390px;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    padding: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ---------------- TITLE ---------------- */
+
+h1 {
+    font-family: "Microbrew", Arial, sans-serif;
+    font-size: 34px;
+    text-align: center;
+    color: #111827;
+    letter-spacing: 1px;
+}
+
+.powered {
+    align-self: center;
+    background: #EAF2FF;
+    color: #2563EB;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ---------------- CARDS ---------------- */
+
+.urlCard,
+.scoreCard,
+.section {
+
+    background: #F8FAFC;
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+
+}
+
+/* ---------------- WEBSITE ---------------- */
+
+.smallTitle {
+
+    font-size: 12px;
+
+    color: #6B7280;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+#website {
+
+    font-size: 15px;
+
+    word-break: break-word;
+
+    line-height: 1.5;
+
+}
+
+/* ---------------- SCORE ---------------- */
+
+.scoreCard {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+}
+
+.progress-circle {
+
+    width: 120px;
+
+    height: 120px;
+
+    position: relative;
+
+    flex-shrink: 0;
+
+}
+
+.progress-circle svg {
+
+    transform: rotate(-90deg);
+
+}
+
+.bg {
+
+    fill: none;
+
+    stroke: #E5E7EB;
+
+    stroke-width: 10;
+
+}
+
+.progress {
+
+    fill: none;
+
+    stroke: #22C55E;
+
+    stroke-width: 10;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 314;
+
+    stroke-dashoffset: 314;
+
+    transition: all .8s ease;
+
+}
+
+.circleText {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+}
+
+#score {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+}
+
+.circleText span {
+
+    color: #6B7280;
+
+    font-size: 13px;
+
+}
+
+.scoreInfo {
+
+    flex: 1;
+
+}
+
+#rating {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+
+}
+
+#grade {
+
+    font-size: 17px;
+
+    color: #2563EB;
+
+    font-weight: bold;
+
+}
+
+/* ---------------- HEADINGS ---------------- */
+
+.section h2 {
+
+    margin-bottom: 14px;
+
+    font-size: 18px;
+
+}
+
+/* ---------------- BADGES ---------------- */
+
+#badges {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+.badge {
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+.good {
+
+    background: #DCFCE7;
+
+    color: #15803D;
+
+}
+
+.warn {
+
+    background: #FEF3C7;
+
+    color: #B45309;
+
+}
+
+.bad {
+
+    background: #FEE2E2;
+
+    color: #B91C1C;
+
+}
+
+/* ---------------- LISTS ---------------- */
+
+ul {
+
+    padding-left: 20px;
+
+}
+
+li {
+
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+
+}
+
+/* ---------------- SCROLLBAR ---------------- */
+
+::-webkit-scrollbar {
+
+    width: 6px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #CBD5E1;
+
+    border-radius: 10px;
+
+}
+
+/* ---------------- HOVER ---------------- */
+
+.badge {
+
+    transition: .25s;
+
+}
+
+.badge:hover {
+
+    transform: translateY(-2px);
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Privacy Risk Scanner</title>
+
+    <link rel="stylesheet" href="popup.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>PRIVACY RISK SCANNER</h1>
+
+        <div class="powered">
+            AI Powered Analysis
+        </div>
+
+        <div class="urlCard">
+
+            <div class="smallTitle">
+                Website
+            </div>
+
+            <div id="website">
+                Loading...
+            </div>
+
+        </div>
+
+        <div class="scoreCard">
+
+            <div class="progress-circle">
+
+                <svg width="120" height="120">
+
+                    <circle class="bg" cx="60" cy="60" r="50">
+                    </circle>
+
+                    <circle id="progress" class="progress" cx="60" cy="60" r="50">
+                    </circle>
+
+                </svg>
+
+                <div class="circleText">
+
+                    <div id="score">
+                        0
+                    </div>
+
+                    <span>/100</span>
+
+                </div>
+
+            </div>
+
+            <div class="scoreInfo">
+
+                <div id="rating">
+                    Scanning...
+                </div>
+
+                <div id="grade">
+                    Grade -
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Security Status</h2>
+
+            <div id="badges">
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>AI Suggestions</h2>
+
+            <ul id="tips">
+
+                <li>Scanning...</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
